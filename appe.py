@@ -39,16 +39,6 @@ projects = [
         "live_link": "#",
         "github_link": "#"
     },
-    {
-        "id": 3,
-        "title": "Project Name Three",
-        "short_desc": "Short description of what the project does.",
-        "full_desc": "A longer, detailed explanation of the project — what problem it solves, how you built it, and what you learned.",
-        "tech": ["Python", "Pandas", "SQL"],
-        "image": "project3.jpg",
-        "live_link": "#",
-        "github_link": "#"
-    },
 ]
 
 @app.route('/')
