@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .error-code {
+            font-size: 5em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .error-description {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Your Name</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <h1 class="error-message">Page Not Found</h1>
+        <p class="error-description">Sorry, the page you're looking for doesn't exist or has been moved.</p>
+        <a href="/" class="btn btn-primary">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Your Name. Built with Python & Flask.</p>
+    </footer>
+
+</body>
+</html>
