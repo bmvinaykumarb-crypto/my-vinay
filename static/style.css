@@ -32,7 +32,7 @@ nav {
 .logo {
     font-weight: 700;
     font-size: 1.3rem;
-    color: #5f58e5;
+    color: #ee0ef2;
 }
 
 .nav-links {
@@ -60,7 +60,7 @@ nav {
     justify-content: center;
     text-align: center;
     background: linear-gradient(135deg, #6c63ff 0%, #4834d4 100%);
-    color: white;
+    color: rgb(22, 221, 108);
     padding: 100px 20px 60px;
 }
 
