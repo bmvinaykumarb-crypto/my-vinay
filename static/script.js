@@ -55,7 +55,7 @@ if(window.VanillaTilt){
         speed: 5000,
         scale: 1.03,
         glare: true,
-        'max-glare': 0.18
+        'max-glare': 0.20
     });
 }
 
