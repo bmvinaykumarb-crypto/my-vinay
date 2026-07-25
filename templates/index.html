@@ -4,83 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VINAY | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
+    <div class="scanline" aria-hidden="true"></div>
+
     <nav>
-        <div class="logo">BM VINAY KUMAR</div>
+        <div class="logo"><span class="logo-bracket">&lt;</span>BM VINAY KUMAR<span class="logo-bracket">/&gt;</span></div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"><span class="nav-idx">01</span>About</a></li>
+            <li><a href="#skills"><span class="nav-idx">02</span>Skills</a></li>
+            <li><a href="#projects"><span class="nav-idx">03</span>Projects</a></li>
+            <li><a href="#contact"><span class="nav-idx">04</span>Contact</a></li>
         </ul>
         <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     </nav>
 
     <header class="hero">
         <div id="hero-3d" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-content">
-            <img src="{{ url_for('static', filename='aura.jpg') }}" alt="Profile Picture" class="profile-pic">
-            <h1>Hi, I'm <span>BM VINAY KUMAR</span></h1>
-            <p class="tagline">Web Developer &nbsp;|&nbsp; Python Enthusiast</p>
+            <p class="hero-eyebrow">// currently open to opportunities</p>
+            <div class="profile-frame">
+                <img src="{{ url_for('static', filename='aura.jpg') }}" alt="Profile Picture" class="profile-pic">
+                <svg class="hex-ring" viewBox="0 0 220 220" aria-hidden="true">
+                    <polygon points="110,6 199,58 199,162 110,214 21,162 21,58" />
+                </svg>
+            </div>
+            <h1>Hi, I'm <span class="glitch" data-text="BM VINAY KUMAR">BM VINAY KUMAR</span></h1>
+            <p class="tagline"><span class="typed-text">Web Developer</span><span class="tagline-sep">|</span><span class="typed-text-2">Python Enthusiast</span></p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="{{ url_for('static', filename='resume.docx') }}" class="btn btn-outline" download>⬇ Download Resume</a>
             </div>
+            <div class="scroll-cue" aria-hidden="true"><span></span></div>
         </div>
     </header>
 
 
     <section id="about" class="section fade-in">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>#Professional Bio
-
-My name is **BM Vinay Kumar**, and I am a recent **Bachelor of Computer Applications (BCA)** graduate from **VNC College, Hospet**. As a passionate and motivated fresher, I am eager to begin my career in the software and web development industry.
-
-I have a strong interest in building modern, responsive, and user-friendly websites and web applications. I enjoy learning new technologies, solving programming challenges, and creating practical solutions through code.
-
-My technical skills include **Python, Flask, SQL, CSV data handling, HTML, CSS, and JavaScript**. I have experience developing web applications, designing responsive web pages, working with databases, and handling data efficiently. I am committed to continuously improving my skills and staying up to date with the latest technologies.
-
-As a fresher, I bring enthusiasm, a willingness to learn, strong problem-solving abilities, and a dedication to delivering quality work. I am looking for opportunities where I can contribute to innovative projects while growing as a software developer.
-
-**Technical Skills**
-
-* Python
-* Flask
-* SQL
-* HTML5
-* CSS3
-* JavaScript
-* CSV Data Handling
-* Website Development
-* Responsive Web Design
-
-I am excited to start my professional journey and contribute to an organization that values innovation, collaboration, and continuous learning.
-.</p>
+        <h2><span class="section-tag">01</span>About Me</h2>
+        <div class="terminal-window">
+            <div class="terminal-bar">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title">about_me.py</span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="prompt">&gt;&gt;&gt;</span> whoami()</p>
+                <p class="output">BM Vinay Kumar — BCA Graduate, VNC College, Hospet</p>
+                <p><span class="prompt">&gt;&gt;&gt;</span> print(bio)</p>
+                <p class="output">A fresh graduate eager to build modern, responsive, user-friendly web applications. I enjoy learning new technologies, solving programming challenges, and turning problems into practical code &mdash; comfortable across the stack from Flask backends to interactive frontends.</p>
+                <p><span class="prompt">&gt;&gt;&gt;</span> print(traits)</p>
+                <p class="output">Fast learner, strong problem-solver, detail-oriented, and genuinely excited to grow as a developer while contributing to real, innovative projects.</p>
+                <p><span class="prompt">&gt;&gt;&gt;</span> <span class="cursor-blink">_</span></p>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="section alt-bg fade-in">
-        <h2>Skills</h2>
+        <h2><span class="section-tag">02</span>Skills</h2>
         <div class="skills-grid">
             <div class="skill-card"><div class="skill-icon">🐍</div><h3>Python</h3></div>
-            <div class="skill-card"><div class="skill-icon">🌐</div><h3>HTML & CSS</h3></div>
+            <div class="skill-card"><div class="skill-icon">🌐</div><h3>HTML &amp; CSS</h3></div>
             <div class="skill-card"><div class="skill-icon">⚡</div><h3>Flask</h3></div>
             <div class="skill-card"><div class="skill-icon">📜</div><h3>JavaScript</h3></div>
-            <div class="skill-card"><div class="skill-icon">📜</div><h3>Sql</h3></div>
-            <div class="skill-card"><div class="skill-icon">📜</div><h3>Java</h3></div>
-            <div class="skill-card"><div class="skill-icon">📜</div><h3>CSV Files</h3></div>
-
-
-
+            <div class="skill-card"><div class="skill-icon">🗄️</div><h3>SQL</h3></div>
+            <div class="skill-card"><div class="skill-icon">☕</div><h3>Java</h3></div>
+            <div class="skill-card"><div class="skill-icon">📊</div><h3>CSV Files</h3></div>
         </div>
     </section>
 
     <section id="projects" class="section fade-in">
-        <h2>Projects</h2>
+        <h2><span class="section-tag">03</span>Projects</h2>
         <div class="projects-grid">
             {% for project in projects %}
             <a href="{{ url_for('project_detail', project_id=project.id) }}" class="project-card">
@@ -94,7 +92,7 @@ I am excited to start my professional journey and contribute to an organization 
     </section>
 
     <section id="contact" class="section alt-bg fade-in">
-        <h2>Get In Touch</h2>
+        <h2><span class="section-tag">04</span>Get In Touch</h2>
         <div class="contact-content">
             <p>Have an opportunity or just want to say hi? Send me a message below.</p>
 
@@ -115,11 +113,11 @@ I am excited to start my professional journey and contribute to an organization 
     </section>
 
     <footer>
-        <p>&copy; 2026 BM VINAY KUMAR. Built with Python & Flask.</p>
+        <p>&copy; 2026 BM VINAY KUMAR. Built with Python &amp; Flask.</p>
     </footer>
 
     <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
