@@ -31,12 +31,12 @@ projects = [
     },
     {
         "id": 2,
-        "title": "Project Name Two",
-        "short_desc": "Short description of what the project does.",
-        "full_desc": "A longer, detailed explanation of the project — what problem it solves, how you built it, and what you learned.",
-        "tech": ["JavaScript", "React", "Node.js"],
+        "title": "My info portfolio",
+        "short_desc": "A brief overview of my information and skills.",
+        "full_desc": "I am a passionate web developer with experience in creating modern web applications it's an modran tech theamed web poertfolio.",
+        "tech": ["JavaScript", "flask.Python", "Html","Css",],
         "image": "project2.jpg",
-        "live_link": "#",
+        "live_link": "https://my-vinay.onrender.com",
         "github_link": "#"
     },
 ]
