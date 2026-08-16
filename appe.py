@@ -26,7 +26,7 @@ projects = [
         """,
         "tech": ["Python","pandas", "HTML", "CSS","CSV","STREAMLIT"],
         "image": "pp.png",
-        "live_link": "http://localhost:8501/",
+        "live_link": "https://vinayat-euymmr4mavc4daizilodlb.streamlit.app/",
         "github_link": "#"
     },
     {
